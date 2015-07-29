@@ -111,7 +111,6 @@
   -->
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="Microsoft.Kinect, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -138,10 +137,6 @@
       <Private>False</Private>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Microsoft.Office.Interop.PowerPoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
-      <Private>False</Private>
-      <EmbedInteropTypes>true</EmbedInteropTypes>
-    </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>False</Private>
     </Reference>
@@ -157,25 +152,12 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="Gestures\Gesture.cs" />
-    <Compile Include="Gestures\GestureCollection.cs" />
-    <Compile Include="Gestures\GestureCollectionManager.cs" />
-    <Compile Include="Gestures\GestureEventArgs.cs" />
-    <Compile Include="Gestures\GestureManager.cs" />
-    <Compile Include="Gestures\GesturePoseResult.cs" />
-    <Compile Include="Gestures\GestureType.cs" />
-    <Compile Include="Gestures\IGesturePose.cs" />
-    <Compile Include="Gestures\Poses\HandLeftPoses.cs" />
-    <Compile Include="Gestures\Poses\HandRightPoses.cs" />
-    <Compile Include="KinectHandler.cs" />
     <Compile Include="KinectRibbon.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="KinectRibbon.Designer.cs">
       <DependentUpon>KinectRibbon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logger.cs" />
-    <Compile Include="PowerPointHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -215,7 +197,20 @@
   <ItemGroup>
     <None Include="Resources\kinect.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ControlCommon\ControlCommon.csproj">
+      <Project>{6616471f-4b5b-426e-8f69-897e6448f262}</Project>
+      <Name>ControlCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KinectPowerPointControl\KinectPowerPointControl.csproj">
+      <Project>{344ae539-6360-48d2-b658-c112cef88866}</Project>
+      <Name>KinectPowerPointControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PowerPoint2013Control\PowerPoint2013Control.csproj">
+      <Project>{7aa87b72-0d60-42e6-9c5b-bdbb45e815c3}</Project>
+      <Name>PowerPoint2013Control</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

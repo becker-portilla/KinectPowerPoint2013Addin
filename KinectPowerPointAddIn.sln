@@ -5,6 +5,14 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectPowerPointAddIn", "KinectPowerPointAddIn\KinectPowerPointAddIn.csproj", "{FF596CDA-09B8-4EE3-A300-ECFC6C7BE715}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectPowerPointControl", "KinectPowerPointControl\KinectPowerPointControl.csproj", "{344AE539-6360-48D2-B658-C112CEF88866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPoint2010Control", "PowerPoint2010Control\PowerPoint2010Control.csproj", "{94790F3E-6FD4-4B73-9157-26E606FBD93C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPoint2013Control", "PowerPoint2013Control\PowerPoint2013Control.csproj", "{7AA87B72-0D60-42E6-9C5B-BDBB45E815C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlCommon", "ControlCommon\ControlCommon.csproj", "{6616471F-4B5B-426E-8F69-897E6448F262}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{FF596CDA-09B8-4EE3-A300-ECFC6C7BE715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF596CDA-09B8-4EE3-A300-ECFC6C7BE715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF596CDA-09B8-4EE3-A300-ECFC6C7BE715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344AE539-6360-48D2-B658-C112CEF88866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344AE539-6360-48D2-B658-C112CEF88866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344AE539-6360-48D2-B658-C112CEF88866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344AE539-6360-48D2-B658-C112CEF88866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94790F3E-6FD4-4B73-9157-26E606FBD93C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94790F3E-6FD4-4B73-9157-26E606FBD93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94790F3E-6FD4-4B73-9157-26E606FBD93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94790F3E-6FD4-4B73-9157-26E606FBD93C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA87B72-0D60-42E6-9C5B-BDBB45E815C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA87B72-0D60-42E6-9C5B-BDBB45E815C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA87B72-0D60-42E6-9C5B-BDBB45E815C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA87B72-0D60-42E6-9C5B-BDBB45E815C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6616471F-4B5B-426E-8F69-897E6448F262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6616471F-4B5B-426E-8F69-897E6448F262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6616471F-4B5B-426E-8F69-897E6448F262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6616471F-4B5B-426E-8F69-897E6448F262}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

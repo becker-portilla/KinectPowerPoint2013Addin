@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Kinect;
-using KinectPowerPointAddIn.Gestures;
+using KinectPowerPointControl.Gestures;
+using ControlCommon;
 
-namespace KinectPowerPointAddIn
+namespace KinectPowerPointControl
 {
     public class KinectHandler
     {
@@ -17,7 +18,7 @@ namespace KinectPowerPointAddIn
         private GestureCollectionManager gestureCollectionManager;
         #endregion
 
-        public PowerPointHandler Handler { get; set; }
+        public IPowerPointHandler Handler { get; set; }
 
         public KinectHandler()
         {

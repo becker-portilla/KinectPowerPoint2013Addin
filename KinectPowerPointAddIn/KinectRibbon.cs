@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Office.Tools.Ribbon;
+using KinectPowerPointControl;
+using PowerPoint2013Control;
+using ControlCommon;
 
 namespace KinectPowerPointAddIn
 {
@@ -21,7 +24,6 @@ namespace KinectPowerPointAddIn
             {
                 kinect.Handler = new PowerPointHandler();
                 kinect.Handler.PlayPresentation = this.chkStartPresentation.Checked;
-                kinect.Handler.Test();
                 kinect.Start();
             }
             else

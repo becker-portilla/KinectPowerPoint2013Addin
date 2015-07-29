@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace KinectPowerPointAddIn.Gestures
+namespace KinectPowerPointControl.Gestures
 {
     public static class GestureCollection
     {

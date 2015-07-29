@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace KinectPowerPointAddIn
+namespace ControlCommon
 {
     public static class Logger
     {

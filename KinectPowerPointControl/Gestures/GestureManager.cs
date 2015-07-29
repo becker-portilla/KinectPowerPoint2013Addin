@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.Kinect;
+using ControlCommon;
 
-namespace KinectPowerPointAddIn.Gestures
+namespace KinectPowerPointControl.Gestures
 {
     public class GestureManager
     {

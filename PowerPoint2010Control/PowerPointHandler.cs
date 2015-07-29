@@ -6,10 +6,11 @@ using System.Text;
 // add PowerPoint namespace
 using PPt = Microsoft.Office.Interop.PowerPoint;
 using System.Runtime.InteropServices;
+using ControlCommon;
 
-namespace KinectPowerPointAddIn
+namespace PowerPoint2010Control
 {
-    public class PowerPointHandler
+    public class PowerPointHandler : IPowerPointHandler
     {
         // Define PowerPoint Application object
         PPt.Application pptApplication;
@@ -37,6 +38,8 @@ namespace KinectPowerPointAddIn
             {
                 // Get Running PowerPoint Application object
                 pptApplication = Marshal.GetActiveObject("PowerPoint.Application") as PPt.Application;
+                pptApplication.SlideShowBegin += pptApplication_SlideShowBegin;
+                pptApplication.SlideShowEnd += pptApplication_SlideShowEnd;
 
                 if (pptApplication != null)
                 {
@@ -74,6 +77,22 @@ namespace KinectPowerPointAddIn
             catch
             {
                 //TODO
+            }
+        }
+
+        void pptApplication_SlideShowEnd(PPt.Presentation Pres)
+        {
+            if (SlideShowEnd != null)
+            {
+                SlideShowEnd(this, new EventArgs());
+            }
+        }
+
+        void pptApplication_SlideShowBegin(PPt.SlideShowWindow Wn)
+        {
+            if (SlideShowBegin != null)
+            {
+                SlideShowBegin(this, new EventArgs());
             }
         }
 
@@ -144,7 +163,7 @@ namespace KinectPowerPointAddIn
                     //standard mode
                     //slide = slides[slideIndex];
                     //slides[slideIndex].Select();
-                    
+
                     Logger.Log("Siguiente Diapositiva");
 
                     //fullscreen mode
@@ -183,5 +202,10 @@ namespace KinectPowerPointAddIn
                 
             }
         }
+
+
+        public event EventHandler SlideShowBegin;
+
+        public event EventHandler SlideShowEnd;
     }
 }

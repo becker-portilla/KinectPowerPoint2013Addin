@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Kinect;
 
-namespace KinectPowerPointAddIn.Gestures.Poses
+namespace KinectPowerPointControl.Gestures.Poses
 {
     public class HandLeft_HandRightOfElbowPose : IGesturePose
     {

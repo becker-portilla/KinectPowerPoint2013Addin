@@ -1,6 +1,6 @@
 ﻿using Microsoft.Kinect;
 
-namespace KinectPowerPointAddIn.Gestures
+namespace KinectPowerPointControl.Gestures
 {
     public interface IGesturePose
     {

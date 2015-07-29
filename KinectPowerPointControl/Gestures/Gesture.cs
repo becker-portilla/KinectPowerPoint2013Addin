@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KinectPowerPointAddIn.Gestures
+namespace KinectPowerPointControl.Gestures
 {
     public class Gesture
     {

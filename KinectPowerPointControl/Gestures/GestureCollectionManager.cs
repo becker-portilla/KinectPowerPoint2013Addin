@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ControlCommon;
 
-namespace KinectPowerPointAddIn.Gestures
+namespace KinectPowerPointControl.Gestures
 {
     public class GestureCollectionManager
     {
